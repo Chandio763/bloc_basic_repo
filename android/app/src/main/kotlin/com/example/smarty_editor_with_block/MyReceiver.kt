@@ -10,7 +10,7 @@ class MyReceiver : BroadcastReceiver() {
     override fun onReceive(context: Context, intent: Intent) {
 
         val navigateTo = intent.getStringExtra("navigate_to")
-        Log.i("Service", "inside Broad Recive ${navigateTo} ")
+        Log.i("Service", "inside Broad Receiver ${navigateTo} ")
         if (navigateTo == "specific_screen") {
 //            flutterEngine?.dartExecutor?.binaryMessenger?.let { MethodChannel(it, CHANNEL).invokeMethod("navigateToSpecificScreen", null) }
 
